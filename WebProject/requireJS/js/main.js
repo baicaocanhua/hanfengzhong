@@ -8,7 +8,7 @@
 // });
 
 require(['config'],function(){
-    require(['maimai','logger'],function (maimai,logger) {
+    require(['MAIMAI','logger'],function (maimai,logger) {
          maimai.fun1();
          //logger.logInfo();
     });
