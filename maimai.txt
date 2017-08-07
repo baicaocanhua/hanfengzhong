@@ -1,1 +1,15 @@
 onsubmit="return false;"
+
+<form action="index.jsp" method="post" onsubmit="return submitTest();">   
+    <INPUT value="www">  
+    <input type="submit" value="submit">  
+</form>  
+  
+<SCRIPT LANGUAGE="JavaScript">  
+<!--   
+    function submitTest() {   
+        // 一些逻辑判断   
+     return false;   
+    }   
+//-->  
+</SCRIPT>  
