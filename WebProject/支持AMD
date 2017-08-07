@@ -24,3 +24,25 @@ if (typeof define === "function" && define.amd) {
         //插件代码
     };
 }));
+
+(function(){
+    var Widget = function(){....};
+
+    // AMD && CMD
+    if(typeof define === 'function'){
+        define(function(){
+            return Widget;
+        });
+    // CommonJS
+    }else if(typeof module !== "undefined" && module !== null){
+        module.exports = Widget;
+    // window
+    }else{
+        window.Widget = Widget;
+    }
+})();
+
+作者：Treri
+链接：https://www.zhihu.com/question/23321329/answer/24199265
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
