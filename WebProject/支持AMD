@@ -1,3 +1,6 @@
+http://www.cnblogs.com/webARM/p/4795589.html
+http://www.jianshu.com/p/3532977ebce9
+http://www.css88.com/archives/4826/
 if (typeof define === "function" && define.amd) {
     define("jquery", [], function () {
         return jQuery;
