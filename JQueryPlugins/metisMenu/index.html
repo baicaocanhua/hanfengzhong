@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="metisMenu.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="metisMenu.js"></script>
+</head>
+
+<body>
+    <a href=" http://mm.onokumus.com/#"> http://mm.onokumus.com/#</a>
+    aria-disabled="true" 不让用
+    aria-expanded="true" 展开
+    <ul class="metismenu" id="menu">
+        <li class="active">
+            <a class="has-arrow" href="#" aria-expanded="true">Menu 1</a>
+            <ul aria-expanded="true">
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+            </ul>
+        </li>
+        <li>
+            <a class="has-arrow" href="#" aria-expanded="false" aria-disabled="true">Menu 2</a>
+            <ul aria-expanded="false">
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+            </ul>
+        </li>
+        <li>
+            <a class="has-arrow" href="#" aria-expanded="false">Menu 3</a>
+            <ul aria-expanded="false">
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+                <li>111</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $(function () {
+            $("#menu").metisMenu();
+        })
+    </script>
+</body>
+
+</html>
