@@ -1,0 +1,20 @@
+再讲IQueryable<T>，揭开表达式树的神秘面纱 *****
+http://www.cnblogs.com/zhaopei/p/IQueryable-IQueryProvider.html
+
+
+表达式树的解析. *****
+http://www.cnblogs.com/Leo_wl/p/5734831.html
+
+C# Expression 树转化为SQL语句（一）
+http://www.cnblogs.com/linxingxunyan/p/6245396.html
+
+Linq表达式树解析1 **
+http://blog.csdn.net/Joyhen/article/details/40107979
+Linq表达式树解析2 **
+http://blog.csdn.net/joyhen/article/details/40378867
+介绍一个可以将Expression表达式树解析成Transact-SQL的项目Expression2Sql **
+http://www.cnblogs.com/StrangeCity/p/4795117.html
+
+
+农码一生博文索引
+http://www.cnblogs.com/zhaopei/p/Indexes.html#autoid-0-0
