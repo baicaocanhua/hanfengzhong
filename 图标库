@@ -1,0 +1,22 @@
+http://www.fontawesome.com.cn/faicons/
+http://fontawesome.io/examples/
+fa fa-xxxxx
+
+
+<div class="input-group-btn open">
+                                        <button tabindex="-1" class="btn btn-white" type="button">操作</button>
+                                        <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button" aria-expanded="true">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="form_basic.html#">选项1</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项2</a>
+                                            </li>
+                                            <li><a href="form_basic.html#">选项3</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="form_basic.html#">选项4</a>
+                                            </li>
+                                        </ul>
+                                    </div>
