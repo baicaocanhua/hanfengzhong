@@ -1,1 +1,52 @@
 https://www.codeproject.com/Articles/560798/ASP-NET-MVC-Controller-Dependency-Injection-for-Be
+
+IoC实践--用Autofac实现MVC5.0的IoC控制反转方法
+http://blog.csdn.net/oaa608868/article/details/53527111
+
+Ioc容器Autofac系列（1）-- 初窥  log的例子 **
+http://www.cnblogs.com/hkncd/archive/2012/11/21/2780041.html
+Ioc容器Autofac系列（2）-- asp.net mvc中整合autofac **
+http://www.cnblogs.com/hkncd/archive/2012/11/28/2792474.html
+IoC实践--用Autofac实现MVC5.0的IoC控制反转方法  切换orm
+https://www.lanhusoft.com/Article/76.html
+asp.net mvc4 简单使用Autofac依赖注入小结**
+http://blog.csdn.net/zhanglong_longlong/article/details/46875723
+
+ASP.NET MVC IOC 之AutoFac攻略
+http://www.cnblogs.com/WeiGe/p/3871451.html
+
+Autofac中文文档--一、注册组件--4组件扫描
+http://blog.csdn.net/chiyueqi/article/details/52449390
+
+
+ASP.NET MVC中Autofac实现的自动注入模式
+http://www.cnblogs.com/n-pei/archive/2013/01/24/2875674.html
+
+使用AutoMapper实现领域模型与DTO映射
+Asp.mvc（三） ~ 使用 Autofac 实现依赖注入 #  
+http://blog.csdn.net/zhanxueguang/article/details/47033543
+
+
+Autofac官方文档翻译——（一）Getting Started
+http://blog.csdn.net/favors/article/details/46740321
+http://docs.autofac.org/en/latest/getting-started/index.html
+
+Autofac中文文档--一、注册组件--1注册概念
+http://blog.csdn.net/chiyueqi/article/details/52444251
+
+
+builder.RegisterControllers(typeof(MvcApplication).Assembly);
+builder.RegisterType<EFProductRepository>().As<IProductRepository>(); 
+              
+
+
+
+builder.RegisterControllers(Assembly.GetExecutingAssembly());
+builder.RegisterType<StudentRepository>().As<IStudentRepository>();
+
+
+
+
+svg             image/svg+xml
+.woff            application/x-font-woff    font/font-woff
+.woff2          application/x-font-woff  application/font-woff2
