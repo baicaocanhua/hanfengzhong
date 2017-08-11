@@ -3,3 +3,27 @@
 
 
 http://beijing.wokuan.cn/smartWo/savefillinfo?firstprice=1
+
+
+bootstrap-datepicker
+  $(".datepicker").datepicker({
+                language: "zh-CN",
+                autoclose: true,//选中之后自动隐藏日期选择框
+                clearBtn: true,//清除按钮
+                todayBtn: true,//今日按钮
+                format: "yyyy-mm-dd"//日期格式，详见 http://bootstrap-datepicker.readthedocs.org/en/release/options.html#format
+            });
+
+            $(".datepicker").datepicker("getDate").toLocaleString();//获取
+            $(".datepicker").datepicker("setDate", '2014-01-25');//设置
+
+
+
+bday-picker.js
+            //var options = {
+            //    "dateFormat": "bigEndian",
+            //    "monthFormat": "shortNum",
+            //    "placeholder": false
+            //};
+
+            //$("#bir").birthdaypicker(options);
