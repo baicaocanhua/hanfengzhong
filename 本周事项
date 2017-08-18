@@ -12,3 +12,66 @@
 
 周5
 国防军事信息资源服务季-答题竞赛
+
+
+http://tiyan.cnki.net/
+
+高雅
+http://tiyan.cnki.net/   体育知识服务 
+王雪静
+http://scjs.cnki.net/  中国市场监管知识网络答题竞赛
+周一
+云南答题竞赛数据导出
+体育知识服务 首页改动
+各区联系人文档修改
+
+周二
+财政竞赛找回密码
+周三
+前台用户登录注册找回密码
+
+
+Activities
+GetActivitiesList
+HotTopic
+BriefList
+Brief/HotTopic
+
+Subjects
+List
+
+http://192.168.20.58/testpaper/index.html?ruleID=68&isgroup=0&extra=0&type=0&ChannelId=31&usesession=0
+http://dzsw.cnki.net/sy/dtjs1.html
+
+66 兵工
+67 军营 
+68 核工业
+
+◆ 来自动态编程语言——如Python或Ruby——的对象
+
+◆ 通过IDispatch访问的COM对象
+
+◆ 通过反射访问的一般.NET类型
+
+◆ 结构发生过变化的对象——如HTML DOM对象 C# 4.0中动态创建的对象
+
+
+ExpandoObject：表示一个对象，该对象包含可在运行时动态添加和移除的成员。
+http://www.cnblogs.com/LoveJenny/archive/2011/07/05/2098578.html
+
+
+
+http://192.168.20.58/api/user/PasswordDES.ashx?pwd=BB32626E2D8B776D&salt=2FTVN0
+
+
+6     // 手机号码验证
+ 7     $.validator.addMethod("isMobile", function(value, element) {
+ 8         var length = value.length;
+ 9         var mobile = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+10         return this.optional(element) || (length == 11 && mobile.test(value));
+11     }, "请正确填写您的手机号码");
+
+
+
+http://www.cnblogs.com/huanglin/p/5783900.html#3727810
+http://www.cnblogs.com/wintersun/archive/2011/06/19/2084755.html

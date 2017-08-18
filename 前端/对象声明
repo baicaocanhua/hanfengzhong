@@ -1,0 +1,95 @@
+http://www.cnblogs.com/ghostwu/p/7349233.html
+面向对象的常见写法与优缺点
+1：var Utils = {
+    checkUserName: function () {
+        console.log('Utils->checkUserName');
+    }
+}
+是字面量方式添加，在设计模式里面，也称为单例（单体）模式， 与之类似的可以通过在函数本身添加属性和方法，变成静态属性和方法
+和下面的一样
+2：var Utils = {};
+Utils.checkUserName = function () {
+    console.log('Utils->checkUserName');
+}
+Utils.checkUserName();
+和下面的一样
+3：var Utils = function () {
+
+}
+
+上面的三种字面量形式 都无法new 
+
+
+下面的都是new
+var Utils = function () {
+    this.add = function () {
+        alert(123);
+    }
+}
+var Util = function () {
+
+};
+Util.prototype.add = function () {
+    alert(123);
+};
+
+var Utils = function () {
+    return {
+        add: function () {
+            alert(123);
+        }
+    }
+}
+var Utils = function () {
+    var a = {};
+    a.add = function () {
+        alert(123);
+    }
+    return a;
+}
+//加在函数上面的属性和方法，无法通过对象使用
+var u = new Utils();
+u.add();
+
+
+
+var Util = function(){
+            
+        };
+        Util.prototype = {
+            checkUserEmail : function(){
+                console.log( 'userEmail' );
+            },
+            checkUserName : function(){
+                console.log( 'userName' );
+            },
+            checkUserPwd : function(){
+                console.log( 'userPwd' );
+            }
+        };
+        var oUtil1 = new Util();
+        var oUtil2 = new Util();
+        console.log( oUtil1.checkUserEmail === oUtil2.checkUserEmail );//true
+
+
+        var Util = function(){
+            return {
+                checkUserName : function(){
+                    console.log( 'userName...' );
+                    return this;
+                },
+                checkUserPwd : function(){
+                    console.log( 'userPwd...' );
+                    return this;
+                },
+                checkUserEmail : function(){
+                    console.log( 'userEmail...' );
+                    return this;
+                }
+            }
+        }
+        // 方法中如果没有返回this,下面这种调用方式是错误的
+        Util().checkUserEmail().checkUserName();
+
+        // 方法中返回对象本身,可以链式调用
+        Util().checkUserEmail().checkUserName().checkUserPwd();

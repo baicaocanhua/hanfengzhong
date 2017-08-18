@@ -1,0 +1,11 @@
+dataType 返回的数据类型
+XML、html、json、jsonp、script或者text
+
+
+
+Ajax请求是限时的
+
+
+processData
+设置 processData 选项为 false，防止自动转换数据格式
+
