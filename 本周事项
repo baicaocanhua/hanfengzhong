@@ -1,17 +1,6 @@
 周一
-登录功能
-周二
-云南竞赛线上数据不对，样式修改
-市场监管数据不对修改，市场监管成绩单页面修改，添加mysql定时任务   16人
+首页样式修改
 
-周三
-前台用户管理
-周四
-个人资料管理
-
-
-周5
-国防军事信息资源服务季-答题竞赛
 
 
 http://tiyan.cnki.net/
@@ -42,6 +31,10 @@ List
 
 http://192.168.20.58/testpaper/index.html?ruleID=68&isgroup=0&extra=0&type=0&ChannelId=31&usesession=0
 http://dzsw.cnki.net/sy/dtjs1.html
+
+
+http://192.168.20.58/api/Province-City/provinceCount.ashx?SiteID=30
+
 
 66 兵工
 67 军营 
@@ -75,3 +68,6 @@ http://192.168.20.58/api/user/PasswordDES.ashx?pwd=BB32626E2D8B776D&salt=2FTVN0
 
 http://www.cnblogs.com/huanglin/p/5783900.html#3727810
 http://www.cnblogs.com/wintersun/archive/2011/06/19/2084755.html
+
+
+ <%=get_token()%>

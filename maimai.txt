@@ -13,3 +13,28 @@ onsubmit="return false;"
     }   
 //-->  
 </SCRIPT>  
+
+
+http://www.cnblogs.com/shytong/p/5087147.html
+
+http://blog.csdn.net/atgwwx/article/details/9280635
+
+http://www.cnblogs.com/ccdc/archive/2012/04/17/2453962.html
+
+1. $("#select_id").change(function(){//code...});   
+//为Select添加事件，当选择其中一项时触发
+2. var checkText=$("#select_id").find("option:selected").text();  
+//获取Select选择的Text
+3. var checkValue=$("#select_id").val();  
+//获取Select选择的Value
+4. var checkIndex=$("#select_id ").get(0).selectedIndex;  
+//获取Select选择的索引值
+5. var maxIndex=$("#select_id option:last").attr("index");  
+//获取Select最大的索引值
+
+http://www.cnblogs.com/ccdc/archive/2012/04/17/2453962.html
+
+
+javascript时间戳和日期字符串相互转换
+
+http://www.cnblogs.com/try-better-tomorrow/p/5050583.html
