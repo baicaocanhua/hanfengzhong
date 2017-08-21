@@ -43,6 +43,10 @@ List
 http://192.168.20.58/testpaper/index.html?ruleID=68&isgroup=0&extra=0&type=0&ChannelId=31&usesession=0
 http://dzsw.cnki.net/sy/dtjs1.html
 
+
+http://192.168.20.58/api/Province-City/provinceCount.ashx?SiteID=30
+
+
 66 兵工
 67 军营 
 68 核工业
@@ -75,3 +79,6 @@ http://192.168.20.58/api/user/PasswordDES.ashx?pwd=BB32626E2D8B776D&salt=2FTVN0
 
 http://www.cnblogs.com/huanglin/p/5783900.html#3727810
 http://www.cnblogs.com/wintersun/archive/2011/06/19/2084755.html
+
+
+ <%=get_token()%>
