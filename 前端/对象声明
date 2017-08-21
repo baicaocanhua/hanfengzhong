@@ -93,3 +93,13 @@ var Util = function(){
 
         // 方法中返回对象本身,可以链式调用
         Util().checkUserEmail().checkUserName().checkUserPwd();
+
+
+
+
+
+
+创建对象的两种方式：
+
+var o = new Object();
+var o = {}; // 推荐
