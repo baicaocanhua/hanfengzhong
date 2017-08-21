@@ -1,0 +1,213 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<style type="text/css">
+    img {
+        cursor: pointer
+    }
+</style>
+@*<h3>@ViewData["Message"]</h3>
+    <h3>@ViewData["codedata"]</h3>
+    GetCode：<img src="/home/GetCode" data-src="/home/GetCode" />
+    GetCodeAsync：<img src="/home/GetCodeAsync" data-src="/home/GetCodeAsync" />*@
+
+
+<h4>.netcore - 上传测试用例</h4>
+
+<table class="table table-bordered">
+    <tr>
+        <th>说明</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>form提交+一组图片上传</td>
+        <td>
+            <form class="form-horizontal" action="/Home/FileUp" method="post" enctype="multipart/form-data">
+
+                <input type="file" name="MyPhoto" class="form-control" multiple />
+                <br />
+                <button class="btn btn-default">form上传</button>
+                <br />
+                <span style="color:red">@ViewData["MsgBox"]</span>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>ajax提交+一组图片上传</td>
+        <td>
+            <form class="form-horizontal" id="form01" method="post" enctype="multipart/form-data">
+
+                <input type="file" name="MyPhoto01" class="form-control" multiple />
+                <br />
+                <button type="button" id="btnAjax" class="btn btn-default">ajax上传</button>
+                <br />
+                <span style="color:red" id="span01"></span>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>ajax提交+上传进度+一组图片上传</td>
+        <td>
+            <form class="form-horizontal" id="form02" method="post" enctype="multipart/form-data">
+
+                <input type="file" name="MyPhoto02" class="form-control" multiple />
+                <br />
+                <button type="button" id="btnAjax02" class="btn btn-default">ajax上传进度效果上传</button>
+                <br />
+                <span style="color:red" id="span02"></span>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>Task并行处理+ajax提交+上传进度+一组图片上传</td>
+        <td>
+            <form class="form-horizontal" id="form03" method="post" enctype="multipart/form-data">
+
+                <input type="file" name="MyPhoto03" class="form-control" multiple />
+                <br />
+                <button type="button" id="btnAjax03" class="btn btn-default">task任务处理ajax上传进度效果上传</button>
+                <br />
+                <span style="color:red" id="span03"></span>
+            </form>
+        </td>
+    </tr>
+</table>
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(function () {
+        $("img").on("click", function () {
+            var img = this;
+            var nowTime = new Date().getTime();
+            var src = $(img).attr("data-src") + "?t=" + nowTime;
+            $(img).attr("src", src);
+        });
+
+        $("#btnAjax").on("click", function () {
+            var msg = $("#span01");
+            var form = document.getElementById("form01");
+            //console.log(form);
+            var data = new FormData(form);
+
+            $.ajax({
+                type: "POST",
+                url: "/home/AjaxFileUp",
+                data: data,
+
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data) {
+                        msg.html(data.msg);
+                    }
+                },
+                error: function () {
+                    msg.html("上传文件异常,请稍后重试！");
+                }
+            });
+        });
+
+
+        $("#btnAjax02").on("click", function () {
+
+            var interBar;
+            var msg = $("#span02");
+            msg.html("上传中，请稍后...");
+            var form = document.getElementById("form02");
+            //console.log(form);
+            var data = new FormData(form);
+
+            $.ajax({
+                type: "POST",
+                url: "/home/AjaxFileUp02",
+                data: data,
+
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data) {
+                        msg.html(data.msg);
+                        //清除进度查询
+                        if (interBar) { clearInterval(interBar); }
+                    }
+                },
+                error: function () {
+                    msg.html("上传文件异常,请稍后重试！");
+                    if (interBar) { clearInterval(interBar); }
+                }
+            });
+
+            //获取进度
+            interBar = setInterval(function () {
+
+                $.post("/home/ProgresBar02", function (data) {
+                 
+                    if (data) {
+                        var isClearVal = true;
+                        var strArr = [];
+                        $.each(data, function (i, item) {
+                            strArr.push('文件：' + item.fileName + ",当前上传：" + item.percentBar + '<br/>');
+                            if (item.status != 2) { isClearVal = false; }
+                        });
+                        msg.html(strArr.join(''));
+                        if (isClearVal) {
+                            if (interBar) { clearInterval(interBar); }
+                        }
+                    }
+                });
+            }, 200);
+        });
+
+
+        $("#btnAjax03").on("click", function () {
+
+            var interBar;
+            var msg = $("#span03");
+            msg.html("上传中，请稍后...");
+            var form = document.getElementById("form03");
+            //console.log(form);
+            var data = new FormData(form);
+
+            $.ajax({
+                type: "POST",
+                url: "/home/AjaxFileUp03",
+                data: data,
+
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data) {
+                        msg.html(data.msg);
+                        //清除进度查询
+                        if (interBar) { clearInterval(interBar); }
+                    }
+                },
+                error: function () {
+                    msg.html("上传文件异常,请稍后重试！");
+                    if (interBar) { clearInterval(interBar); }
+                }
+            });
+
+            //获取进度
+            interBar = setInterval(function () {
+
+                $.post("/home/ProgresBar03", function (data) {
+           
+                    if (data) {
+                        var isClearVal = true;
+                        var strArr = [];
+                        $.each(data, function (i, item) {
+                            strArr.push('文件：' + item.fileName + ",当前上传：" + item.percentBar + '<br/>');
+                            if (item.status != 2) { isClearVal = false; }
+                        });
+                        msg.html(strArr.join(''));
+                        if (isClearVal) {
+                            if (interBar) { clearInterval(interBar); }
+                        }
+                    }
+                });
+            }, 200);
+        });
+    })
+</script>
