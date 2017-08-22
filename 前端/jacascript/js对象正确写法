@@ -27,3 +27,6 @@
         return beautifier.beautify();
     }
 })(jQuery, window, document);
+
+
+http://www.cnblogs.com/Wayou/p/jquery_plugin_tutorial.html
