@@ -45,7 +45,7 @@ data.department = 部门
 data.phone =电话
 data.mail = email
 data.province = 省份
-data.duty = 责任 职责
+data.duty = 责任 职责 单位
 data.siteID = 
 data.userID
 data.WjID =
@@ -55,6 +55,5 @@ data.judge= 法官判断
 data.companytype = 公司类型
 data.city = 城市
 data.county = 区域
-data.company = 公司 
+data.company = 公司  地址
 
-撒大大

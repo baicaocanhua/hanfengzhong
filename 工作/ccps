@@ -10,15 +10,15 @@ US_Sex 性别
 US_BrithdayYear
 US_BrithdayMonth
 US_BrithdayDay
-US_Profession 职业
-US_Organizatio 组织n 
+US_Profession 职业 专业
+US_Organizatio 组织 单位
 US_Introduction 介绍
 
 Province
 City
 Area
 County
-Duty 职务
+Duty 职务 工作
 Regtime
 LastLoginTime
 status
@@ -29,12 +29,22 @@ description 描述
 
 
 
-
-
-
-
-
-
+US_Nickname 昵称
+US_Name 用户姓名
+US_Email 电子邮箱
+US_Telephone 用户电话
+US_Sex 性别
+US_BrithdayYear
+US_BrithdayMonth
+US_BrithdayDay
+US_Organizatio 组织 单位
+US_Profession 职业
+地址
+Province
+City
+Area
+County
+US_Introduction 介绍
 
 
 
