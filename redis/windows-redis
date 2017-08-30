@@ -1,0 +1,19 @@
+https://github.com/ServiceStack/redis-windows
+
+设置密码
+requirepass 123456
+设置为服务
+redis-server --service-install redis.conf --loglevel verbose
+
+卸载服务
+redis-server --service-uninstall
+开始服务
+redis-server --service-start
+暂定服务
+redis-server --service-stop
+
+StackExchange.Redis 使用
+https://stackexchange.github.io/StackExchange.Redis/
+
+
+http://www.cnblogs.com/zhangyihui/p/5794479.html

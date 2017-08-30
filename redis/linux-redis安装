@@ -1,0 +1,41 @@
+下载，解压，编译:
+
+$ wget http://download.redis.io/releases/redis-4.0.1.tar.gz
+$ tar xzf redis-4.0.1.tar.gz
+$ cd redis-4.0.1
+$ make
+
+二进制文件是编译完成后在src目录下，通过下面的命令启动Redis服务：
+
+$ src/redis-server
+你可以使用内置的客户端命令redis-cli进行使用：
+
+$ src/redis-cli
+redis> set foo bar
+OK
+redis> get foo
+"bar"
+
+
+启动服务
+redis-server redis.conf
+关闭服务
+redis-cli shutdown
+
+客户端启动
+redis-cli
+
+netstat -anp|grep 6379
+/sbin/iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
+/sbin/iptables -I INPUT -p tcp --dport 6379 -j ACCEPT
+service iptables restart
+
+/etc/rc.d/init.d/iptables save
+
+/etc/init.d/iptables status
+
+/sbin/iptables -I INPUT -p tcp --dport 8000 -j ACCEPT #开启8000端口 
+ 
+/etc/rc.d/init.d/iptables save #保存配置 
+ 
+/etc/rc.d/init.d/iptables restart #重启服务
