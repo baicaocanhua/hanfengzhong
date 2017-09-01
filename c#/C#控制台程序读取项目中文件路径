@@ -1,0 +1,6 @@
+//使用appdomain获取当前应用程序集的执行目录
+string dir = AppDomain.CurrentDomain.BaseDirectory;
+//使用path获取当前应用程序集的执行的上级目录
+dir = Path.GetFullPath("..");
+//使用path获取当前应用程序集的执行目录的上级的上级目录
+dir = Path.GetFullPath("../..");

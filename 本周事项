@@ -9,8 +9,9 @@
 添加数据源名称搜索
 发现form下面只有一个input，enter键提交bug[可能不是bug]
 周四
-
-
+市场监管注册email注册问题
+修改
+处理用户头像初始化问题，添加default头像，引发问题--default不能用作用户名
 周五
 
 
@@ -20,15 +21,9 @@ http://tiyan.cnki.net/
 http://tiyan.cnki.net/   体育知识服务 
 王雪静
 http://scjs.cnki.net/  中国市场监管知识网络答题竞赛
-周一
-云南答题竞赛数据导出
-体育知识服务 首页改动
-各区联系人文档修改
 
-周二
-财政竞赛找回密码
-周三
-前台用户登录注册找回密码
+
+
 
 
 Activities
@@ -64,7 +59,7 @@ ExpandoObject：表示一个对象，该对象包含可在运行时动态添加�
 http://www.cnblogs.com/LoveJenny/archive/2011/07/05/2098578.html
 
 
-
+7ACFD884C4C59057 4N26DT
 http://192.168.20.58/api/user/PasswordDES.ashx?pwd=BB32626E2D8B776D&salt=2FTVN0
 
 章淼123456
@@ -98,3 +93,10 @@ http://www.cnblogs.com/wintersun/archive/2011/06/19/2084755.html
 BootStrapTable.js 表头与内容无法对齐  注释掉就OK
  去掉 height 属性的配置即可保证数据表格的表头部分与数据部分对齐。
   //height: 500,//行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+
+
+
+【我整理的java开源项目】
+http://blog.longjiazuo.com/archives/2625
+
+

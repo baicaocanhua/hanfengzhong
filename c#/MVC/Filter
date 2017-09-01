@@ -1,0 +1,42 @@
+[IResultFilter]
+OnResultExecuted
+OnResultExecuting
+
+[IActionFilter]
+OnActionExecuted
+OnActionExecuting
+
+[ActionFilterAttribute]
+OnActionExecuted(
+OnActionExecuting
+OnResultExecuted(
+OnResultExecuting
+
+
+[AuthorizeAttribute]
+OnAuthorization 1
+AuthorizeCore 2
+HandleUnauthorizedRequest 3
+
+
+        //protected override bool AuthorizeCore(HttpContextBase httpContext)
+        //{
+        //    if ((httpContext.Session == null || httpContext.Session[CCPS.Common.GlobalConstParam.UserInfo] == null))
+        //    {
+        //        return false;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
+
+        //public override void OnAuthorization(System.Web.Mvc.AuthorizationContext filterContext)
+        //{
+        //    base.OnAuthorization(filterContext);
+        //}
+
+        //protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
+        //{
+        //    filterContext.HttpContext.Response.Redirect("/Login/index");
+        //}
