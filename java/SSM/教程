@@ -1,0 +1,60 @@
+使用intellij idea搭建MAVEN+SSM(Spring+SpringMVC+MyBatis)框架
+是orcal的
+http://www.cnblogs.com/jingpeipei/p/6291071.html
+
+
+使用IntelliJ IDEA 14和Maven创建java web项目
+http://www.cnblogs.com/jifeng/p/4658765.html
+
+第六章 注解式控制器详解——注解式控制器运行流程及处理器定义
+http://blog.csdn.net/acesql/article/details/8182236
+
+参考的教程
+SSM框架——详细整合教程（Spring+SpringMVC+MyBatis） *****
+SSM框架整合（IntelliJ IDEA + maven + Spring + SpringMVC + MyBatis）
+http://blog.csdn.net/gallenzhang/article/details/51932152  参考的这个 源码下载的这个
+http://blog.csdn.net/zhshulin/article/details/37956105?utm_source=tuicool&utm_medium=referral
+http://www.cnblogs.com/zyw-205520/p/4771253.html
+
+Maven+SSM框架(Spring+SpringMVC+MyBatis) - Hello World
+http://www.cnblogs.com/hcbin/p/5397977.html
+
+
+手把手教你整合最优雅SSM框架：SpringMVC + Spring + MyBatis
+http://blog.csdn.net/qq598535550/article/details/51703190
+https://github.com/liyifeng1994/ssm
+
+
+Spring + Spring MVC + Mybatis 构建的简易论坛
+https://github.com/igaozp/SSM
+
+springMVC+Spring+Mybatis框架 ： 简易博客系统demo
+https://github.com/LiuJishuai/ssm
+
+
+
+--------------------------
+IntelliJ IDEA 中 右键新建时，选项没有Java class的解决方法和具体解释
+http://blog.csdn.net/qq_27093465/article/details/52912444
+创建java test说明的很详细
+
+Intellij IDEA创建maven项目无java文件问题
+http://www.cnblogs.com/liaojie970/p/7054878.html
+
+使用idea2017搭建SSM框架 charRobt
+http://www.cnblogs.com/hackyo/p/6646051.html
+
+http://localhost:8080/web-ssm/user/showUser
+---------------------
+
+
+疑问
+AnnotationMethodHandlerAdapter
+
+数据库是context？
+
+ SpringMVC+idea中web.xml文件  DOCTYPE
+org.apache.commons.dbcp.BasicDataSource
+
+com.mchange.v2.c3p0.ComboPooledDataSource
+

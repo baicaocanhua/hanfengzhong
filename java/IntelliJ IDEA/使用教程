@@ -1,0 +1,5 @@
+
+
+  1099
+  netstat -aon|findstr 1099
+  taskkill -f -pid 5608

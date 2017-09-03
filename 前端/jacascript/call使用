@@ -1,0 +1,12 @@
+A.call(B)
+this是B，执行的是A
+
+将前面的方法，交给后面使用
+var animal = new Animal();  
+var cat = new Cat();  
+
+通过call或apply方法，将原本属于Animal对象的showName()方法交给对象cat来使用了
+
+http://uule.iteye.com/blog/1158829
+
+Animal.call(this, name);集成

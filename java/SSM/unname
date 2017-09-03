@@ -1,0 +1,31 @@
+需要通过处理器映射DefaultAnnotationHandlerMapping和处理器适配器AnnotationMethodHandlerAdapter
+来开启支持@Controller 和 @RequestMapping注解的处理器。
+
+@Controller：用于标识是处理器类；
+@RequestMapping：请求到处理器功能方法的映射规则；
+@RequestParam：请求参数到处理器功能处理方法的方法参数上的绑定；
+@ModelAttribute：请求参数到命令对象的绑定；
+@SessionAttributes：用于声明session级别存储的属性，放置在处理器类上，通常列出模型属性（如@ModelAttribute）对应的名称，则这些属性会透明的保存到session中；
+@InitBinder：自定义数据绑定注册支持，用于将请求参数转换到命令对象属性的对应类型
+
+
+
+  <mvc:annotation-driven/>
+<context:component-scan base-package="com.springapp.mvc"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+            </list>
+        </property>
+
+    </bean>
