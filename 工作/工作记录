@@ -26,28 +26,3 @@ CompanyName
 67 军营 
 68 核工业
 -----------
-
-
-js获取网站根路径(站点及虚拟目录)
-js获取网站根路径(站点及虚拟目录)
-
-<script>
-function getRootPath(){
-var strFullPath=window.document.location.href;
-var strPath=window.document.location.pathname;
-var pos=strFullPath.indexOf(strPath);
-var prePath=strFullPath.substring(0,pos);
-var postPath=strPath.substring(0,strPath.substr(1).indexOf('/')+1);
-return(prePath+postPath);
-}
-
-alert (getRootPath());
-</script>
-
-    //js获取网站根路径(站点及虚拟目录)，获得网站的根目录或虚拟目录的根地址   
-    function getRootPath() {
-       var pathName = window.location.pathname.substring(1);
-       var webName = pathName == '' ? '' : pathName.substring(0, pathName.indexOf('/'));
-       //return window.location.protocol + '//' + window.location.host + '/'+ webName + '/';
-       return window.location.protocol + '//' + window.location.host + '/'+ webName;
-       } 
