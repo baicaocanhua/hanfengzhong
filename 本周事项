@@ -1,34 +1,16 @@
 周一
-找回密码功能
-
+国防军事竞赛数据导出
+云南竞赛地区排行数据
 周二
-头像上传
-
+创新图书馆页面的登录注册融合
+文艺知识服务
 周三
-修改数据源管理bug，资源映射bug
-添加数据源名称搜索
-发现form下面只有一个input，enter键提交bug[可能不是bug]
+
 周四
-市场监管注册email注册问题
-修改
-处理用户头像初始化问题，添加default头像，引发问题--default不能用作用户名
+
 周五
 
 
-
-
-
-
-
-
-Activities
-GetActivitiesList
-HotTopic
-BriefList
-Brief/HotTopic
-
-Subjects
-List
 
 http://192.168.20.58/testpaper/index.html?ruleID=68&isgroup=0&extra=0&type=0&ChannelId=31&usesession=0
 http://dzsw.cnki.net/sy/dtjs1.html
@@ -37,9 +19,7 @@ http://dzsw.cnki.net/sy/dtjs1.html
 http://192.168.20.58/api/Province-City/provinceCount.ashx?SiteID=30
 
 
-66 兵工
-67 军营 
-68 核工业
+
 
 ◆ 来自动态编程语言——如Python或Ruby——的对象
 

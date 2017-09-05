@@ -10,3 +10,44 @@ http://jingsai.cnki.net/
 http://tiyan.cnki.net/   体育知识服务 
 王雪静
 http://scjs.cnki.net/  中国市场监管知识网络答题竞赛
+单
+http://dzsw.cnki.net/sy/  军事竞赛
+
+
+-----军事竞赛数据导出-----单-
+select dun.UserName,dun.department	,dun.IdentityType	,dun.Province	,dun.CompanyName,dun.Mobile,'',dpsd.Score,'' 
+from dt_paper_score_dzsw AS dpsd LEFT JOIN dt_user_noreg AS  dun ON dpsd.UserID=dun.UserID  
+where dpsd.CreateDate>'2017/8/28 13:56:56' and dpsd.PaperID='66'
+---------------------
+
+CompanyName
+
+66 兵工
+67 军营 
+68 核工业
+-----------
+
+
+js获取网站根路径(站点及虚拟目录)
+js获取网站根路径(站点及虚拟目录)
+
+<script>
+function getRootPath(){
+var strFullPath=window.document.location.href;
+var strPath=window.document.location.pathname;
+var pos=strFullPath.indexOf(strPath);
+var prePath=strFullPath.substring(0,pos);
+var postPath=strPath.substring(0,strPath.substr(1).indexOf('/')+1);
+return(prePath+postPath);
+}
+
+alert (getRootPath());
+</script>
+
+    //js获取网站根路径(站点及虚拟目录)，获得网站的根目录或虚拟目录的根地址   
+    function getRootPath() {
+       var pathName = window.location.pathname.substring(1);
+       var webName = pathName == '' ? '' : pathName.substring(0, pathName.indexOf('/'));
+       //return window.location.protocol + '//' + window.location.host + '/'+ webName + '/';
+       return window.location.protocol + '//' + window.location.host + '/'+ webName;
+       } 
