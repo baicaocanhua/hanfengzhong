@@ -1,5 +1,2 @@
-
-
-  1099
-  netstat -aon|findstr 1099
-  taskkill -f -pid 5608
+破解方法
+  http://idea.iteblog.com/
