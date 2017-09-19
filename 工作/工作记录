@@ -26,3 +26,36 @@ CompanyName
 67 军营 
 68 核工业
 -----------
+
+王雪静 需求
+select CompanyName	 from dt_user_reg where province='450000'
+
+
+1：头部添加id
+2：分离尾部
+3：注册添加id
+
+
+
+
+
+
+var loginUrl = "http://r.cnki.net//klogin/request/login.ashx?act=login&jsonp=login&callback=login&username=tiyutiyan&password=tiyutiyan123&_=1489649864547";
+    $.getScript(loginUrl);
+
+var kloginUrl =  "http://192.168.107.16/KLogin/Request/LoginHandler.ashx?callback=?&t= 
+
+" + Math.random();
+
+
+http://192.168.107.16/KLogin/request/login.ashx?userName=ttod&passWord=cnki
+
+
+http://192.168.107.16/klogin/request/login.ashx?act=login&jsonp=login&callback=login&username=ttod&password=cnki&_=1489649864547
+
+
+
+http://r.cnki.net//klogin/request/login.ashx?act=login&jsonp=login&callback=login&username=syinnovation&password=innovation&_=1489649864547
+
+
+syinnovation innovation
