@@ -1,0 +1,15 @@
+http://www.cnblogs.com/mahuanpeng/p/5785497.html bootstrap-treeview简单使用
+
+
+http://www.cnblogs.com/telwanggs/p/7447483.html  jstree的基本使用例子
+http://blog.csdn.net/qq_30337695/article/details/51219346 jstree的简单使用例子
+
+http://blog.csdn.net/babyxue/article/details/73835444 bootstrap-treeview 中文api
+
+http://blog.csdn.net/rongyongfeikai2/article/details/46691173 jstree自定义contextmenu
+
+http://www.jianshu.com/p/73fc2ee3e6e7  JsTree插件自定义右击菜单
+
+http://blog.csdn.net/qq_24472595/article/details/70053863 jstree中文github文档
+
+http://blog.csdn.net/qq_34117825/article/details/54343656 bootstrap input 下拉树 下拉菜单 下拉列表
