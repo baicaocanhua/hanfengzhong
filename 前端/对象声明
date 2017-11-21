@@ -103,3 +103,35 @@ var Util = function(){
 
 var o = new Object();
 var o = {}; // 推荐
+
+
+http://www.cnblogs.com/zczhangcui/p/6389023.html -JavaScript常见的创建对象的几种方式
+https://segmentfault.com/a/1190000003862596  浅谈 JS 创建对象的 8 种模式
+
+使用js模仿java的实体类对类/对象进行get操作  http://blog.csdn.net/occultskyrong/article/details/48497137
+
+
+5、组合使用构造函数模式和原型模式
+　　这是创建自定义类型的最常见的方式。
+
+　　构造函数模式用于定义实例属性，而原型模式用于定义方法和共享的属性。所以每个实例都会有自己的一份实例属性的副本，但同时共享着对方法的引用，最大限度的节省了内存。同时支持向构造函数传递参数。
+
+复制代码
+function Person(name,age,job){
+    this.name=name;
+    this.age=age;
+    this.job=job;
+    this.friends=["S","C"];
+}
+
+Person.prototype={
+    constructor:Person,
+    sayName:function(){
+        alert(this.name);
+    }
+};
+
+var person1=new Person(...);
+
+
+https://www.zhihu.com/question/19878052  JavaScript 中，定义函数时用 var foo = function () {} 和 function foo() 有什么区别？
