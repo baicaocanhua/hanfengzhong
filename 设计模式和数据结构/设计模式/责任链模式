@@ -1,0 +1,83 @@
+
+
+public abstract class Handler{
+    public Handler successor;
+    public void setSuccessor(Handler successor){
+        this.successor=successor;
+    }
+    public void getSuccessor(){
+        return successor;
+    }
+    public abstract void handleRequest(int level);
+}
+
+/**
+ * @author BeautifulSoup
+ * 村长只能判断级别小于等于1的事
+ */
+public class VillageHeadHandler extends Handler {
+	@Override
+	public void handleRequest(int level) {
+		if(level<=1){
+			System.out.println("村长能够批准此事");
+		}else{
+			successor.handleRequest(level);//无法批准此事就交给下一级别处理
+		}
+	}
+}
+/**
+ * @author BeautifulSoup
+ * 镇长可以处理级别小于等于2的事
+ */
+public class MayorHandler extends Handler {
+	@Override
+	public void handleRequest(int level) {
+		if(level<=2){
+			System.out.println("镇长可以处理这个级别的事情");
+		}else{
+			successor.handleRequest(level);//镇长无法处理这个级别的事交给下一级别处理
+		}
+	}
+}
+/**
+ * @author BeautifulSoup
+ * 县长只能处理级别小于等于级别为3的事
+ */
+public class CountyMagistrateHandler extends Handler {
+	@Override
+	public void handleRequest(int level) {
+		if(level<=3){
+			System.out.println("县长可以批准这个级别的事情");
+		}else{
+			successor.handleRequest(level);//县长无法处理只能交给下一级别的官员
+		}
+	}
+}
+/**
+ * @author BeautifulSoup
+ * 省长可以决定是否批准所有的常见的事情
+ */
+public class GovernorHandler extends Handler {
+	@Override
+	public void handleRequest(int level) {
+		if(level<=4){
+			System.out.println("省长批准处理这个事情");
+		}else{
+			System.out.println("省长不批准这个事情");
+		}
+	}
+}
+
+
+public class d(){
+    Handler villageHeadHandler=new VillageHeadHandler();
+    Handler mayorHandler=new MayorHandler();
+    Handler countyMagistrateHandler =new CountyMagistrateHandler();
+    Handler governorHandler=new GovernorHandler();
+
+    villageHeadHandler.setSuccessor(mayorHandler);
+    mayorHandler.setSuccessor(countyMagistrateHandler);
+    countyMagistrateHandler.setSuccessor(governorHandler);
+
+    villageHeadHandler.handleRequest(3);
+}

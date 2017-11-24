@@ -61,3 +61,10 @@ http://www.ruanyifeng.com/blog/2012/11/require_js.html
 http://requirejs.org/docs/api.html#modulenotes
 
 http://www.jb51.net/article/78661.htm 一篇文章掌握RequireJS常用知识  Require加载
+
+
+https://www.tuicool.com/articles/jam2Anv 快速理解RequireJs
+
+http://blog.csdn.net/bluesky1215/article/details/71079667 requirejs入门到精通
+
+http://blog.csdn.net/sanxian_li/article/details/39394097 RequireJS API中文版
