@@ -1,0 +1,27 @@
+public class AbstractClass
+{
+    public abstract void  fangfa1();
+    public abstract void  fangfa2();
+
+    public void TemplateMethod()
+    {
+        fangfa1();
+        fangfa2();
+    }
+}
+
+public ConcreteClassA:AbstractClass
+{
+    public ovverride void fangfa1()
+    {
+
+    }
+    public ovverride void fangfa2()
+    {
+
+    }
+}
+
+diao
+AbstractClass A=new ConcreteClassA();
+A.TemplateMethod();

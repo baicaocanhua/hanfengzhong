@@ -54,3 +54,57 @@ thymeleaf 学习笔记-基础篇(中文教程)
  http://www.cnblogs.com/vinphy/p/4674247.html
  http://www.jianshu.com/p/ed9d47f92e37
  http://blog.csdn.net/u012706811/article/details/52185345
+
+Spring Boot实战之逐行释义HelloWorld
+ http://www.cnblogs.com/paddix/p/8116866.html?utm_source=gold_browser_extension
+
+
+
+ Web Api 基于Zookeeper的服务注册与发现
+ http://www.cnblogs.com/woxpp/p/8084676.html?utm_source=gold_browser_extension
+ zookeeper.Net
+ https://www.cnblogs.com/zhy-1992/p/7124704.html
+ Zookeeper简介（浅入）让你搞明白
+ http://blog.csdn.net/qq_18416057/article/details/54927189
+ ZooKeeper原理及使用
+ http://blog.csdn.net/xinguan1267/article/details/38422149
+ Zookeeper 集群安装
+ http://www.cnblogs.com/woxpp/p/7700368.html
+
+
+翟永超
+Spring Boot
+ http://blog.didispace.com/categories/Spring-Boot/
+ http://blog.didispace.com/spring-boot-learning-1/
+ Spring Boot + thymeleaf 实现文件上传下载
+ https://juejin.im/post/5a326dcaf265da431048685e?utm_source=gold_browser_extension
+
+Spring Boot基础教程
+ https://gitee.com/didispace/SpringBoot-Learning
+
+ Spring Boot干货系列总纲 嘟嘟独立博客
+ http://tengj.top/2017/04/24/springboot0/
+
+
+ Func<Student, bool> func = t => t.Name == "农码一生";
+ my.where(func)
+
+ function create_counter(initial){
+    var x=initial||0;
+    return {
+        inc:function(){
+            x+=1;
+            return x;
+        }
+    }
+}
+
+Zookeeper数据查看工具ZooInspector简介
+http://blog.csdn.net/liubowin/article/details/77966868?locationNum=6&fps=1
+
+
+https://wangshub.github.io/
+https://github.com/wangshub/wechat_jump_game
+https://zhuanlan.zhihu.com/p/32452473
+https://github.com/wangshub/wechat_jump_game/wiki/Android-%E5%92%8C-iOS-%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4
+http://www.cnblogs.com/rickeyscut/p/8168637.htm

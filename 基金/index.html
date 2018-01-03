@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <ol id="list">
+
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="http://fund.eastmoney.com/js/fundcode_search.js"></script>
+    <script>
+        $(function () {
+            // console.log(r);
+            // var str = "";
+            // for (var i = 0; i < r.length; i++) {
+            //     str += "<li>" + r[i] + "</li>";
+            // }
+            // $("#list").html(str);
+            var fundcodeList=['020026','001542','000522'];
+            for(var i=0;i<fundcodeList.length;i++){
+                $.getJSON('http://fundgz.1234567.com.cn/js/'+fundcodeList[i]+'.js?rt='+Math.random());
+            }
+
+            function jsonpgz(data){
+                console.log(data);
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+public abstract class Subject{
+    public abstract void Request();
+}
+
+class RealSubject extends Subject{
+    @override
+    public void Request(){
+        system.Out.PrintIn(123);
+    }
+}
+
+class Proxy extends Subject
+{
+    RealSubject realSubject;
+
+    @override
+    public void Request(){
+         if(realSubject==null){
+             realSubject=new RealSubject();
+         }
+         realSubject.Request();
+    }
+}
+
+class Proxy2 extends RealSubject{
+    @override
+    public void Request(){
+        system.Out.PrintIn(123);
+    }
+}
+
+
+
+diao
+
+
+Proxy proxy=new proxy();
+proxy.Request();
+
+
+http://beautifulsoup.top/2017/11/23/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/
