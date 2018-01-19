@@ -1,23 +1,43 @@
 周一
-微信页面验证登录
-safari时间格式问题
+修改登录密码明文
+修改登录接口密码MD5加密错误问题
 周二
-修改bootstrap-table参数传递导致的不能分页问题
-注册验证码添加
-添加后台修改功能
+修改系统退出，klogin也退出的逻辑
+
 周三
-修改创新创意征集活动账户不显示问题
+添加学会找回密码
+修改赛事详情图片
+添加学会专家名单
+添加中国地图
+修改获奖名单，敬请期待
+修改问题专区管理作品选择bug
 周四
-梳理新时代图书馆活动页面的需求以及页面存在的问题
+添加上传作品功能
+修改后台试用申请管理，作品提交管理作品选择bug
 周五
-整理新时代图书馆活动页面以及后续开发接口
+修改KLogin的登录方式
 
 
 
 
+C# 开源cms
+orchard
+SiteServer CMS
+
+https://www.jianshu.com/p/c0e1e44f734a
+
+https://code.ziqiangxuetang.com/django/django-cms.html
+
+https://www.zhihu.com/question/24590883
+Swagger文档转Word 文档
+http://www.cnblogs.com/jmcui/p/8298823.html?utm_source=gold_browser_extension
 
 
 
+SPRINGBOOT在IDEA中执行，开启热部署
+https://www.cnblogs.com/ning-blogs/p/6681378.html
+
+deploy  部署
 下周
 云南弹出框
 
