@@ -1,0 +1,35 @@
+1、可空类型修饰符
+值类型不能表示为空，int i=null; 这是错误的
+int? a=null;
+编译后 system.Nullable<int>
+
+2、三运运算符
+? :
+
+3、空合并运算符
+a??b
+如果a不为null，则返回a
+如果a为null，则返回b
+为右结合运算符
+a??b??c   =====  a??(b??c)
+
+
+命名空间别名限定符
+::
+
+用于解决用户自定义的命名空间与系统命名空间重名问题
+global::system
+说明。调用的是全部系统的system
+
+
+
+
+当文字超出时，用...代替
+div
+{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowap;
+}
+
+

@@ -1,6 +1,21 @@
-http://www.ityouknow.com/springboot/2016/01/06/springboot(%E4%B8%80)-%E5%85%A5%E9%97%A8%E7%AF%87.html
 
-springboot(一)：入门篇
+微笑大神  纯洁的微笑
+http://www.ityouknow.com/spring-boot.html
+http://www.cnblogs.com/ityouknow/category/914493.html
+https://github.com/ityouknow
+
+翟永超
+Spring Boot
+ http://blog.didispace.com/categories/Spring-Boot/
+ http://blog.didispace.com/spring-boot-learning-1/
+ Spring Boot + thymeleaf 实现文件上传下载
+ https://juejin.im/post/5a326dcaf265da431048685e?utm_source=gold_browser_extension
+
+Spring Boot基础教程 程序员DD
+ https://gitee.com/didispace/SpringBoot-Learning
+
+ Spring Boot干货系列总纲 嘟嘟独立博客
+ http://tengj.top/2017/04/24/springboot0/
 
 
 spring cloud+dotnet core搭建微服务架构：服务注册（一）
@@ -14,6 +29,11 @@ spring cloud+dotnet core搭建微服务架构：服务发现（二）
 
 
 spring cloud+dotnet core搭建微服务架构：Api网关（三）
+
+
+
+
+
 
 
 
@@ -72,18 +92,8 @@ Spring Boot实战之逐行释义HelloWorld
  http://www.cnblogs.com/woxpp/p/7700368.html
 
 
-翟永超
-Spring Boot
- http://blog.didispace.com/categories/Spring-Boot/
- http://blog.didispace.com/spring-boot-learning-1/
- Spring Boot + thymeleaf 实现文件上传下载
- https://juejin.im/post/5a326dcaf265da431048685e?utm_source=gold_browser_extension
 
-Spring Boot基础教程
- https://gitee.com/didispace/SpringBoot-Learning
 
- Spring Boot干货系列总纲 嘟嘟独立博客
- http://tengj.top/2017/04/24/springboot0/
 
 
  Func<Student, bool> func = t => t.Name == "农码一生";
@@ -103,8 +113,6 @@ Zookeeper数据查看工具ZooInspector简介
 http://blog.csdn.net/liubowin/article/details/77966868?locationNum=6&fps=1
 
 
-https://wangshub.github.io/
-https://github.com/wangshub/wechat_jump_game
-https://zhuanlan.zhihu.com/p/32452473
-https://github.com/wangshub/wechat_jump_game/wiki/Android-%E5%92%8C-iOS-%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4
-http://www.cnblogs.com/rickeyscut/p/8168637.htm
+
+
+

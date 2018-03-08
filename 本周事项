@@ -1,22 +1,21 @@
 周一
-修改登录密码明文
-修改登录接口密码MD5加密错误问题
+修改开始页面，登录后还提示登录的bug
 周二
-修改系统退出，klogin也退出的逻辑
 
 周三
-添加学会找回密码
-修改赛事详情图片
-添加学会专家名单
-添加中国地图
-修改获奖名单，敬请期待
-修改问题专区管理作品选择bug
+修改登录uid问题
 周四
-添加上传作品功能
-修改后台试用申请管理，作品提交管理作品选择bug
+修改后台试卷预览
 周五
-修改KLogin的登录方式
+添加总分数
+添加题目顺序功能
 
+
+
+
+首页单位排行样式和显示前10
+
+http://192.168.107.100/ccps_p/papers/GetUserPaperAnswerDetail/?PP_ID=d0c30175-aaa9-4b98-905b-a872012200a3
 
 
 
@@ -123,3 +122,17 @@ BootStrapTable.js 表头与内容无法对齐  注释掉就OK
 http://blog.longjiazuo.com/archives/2625
 
 
+orchard
+https://github.com/OrchardCMS/Orchard/blob/dev/src/Orchard.Web/Core/Common/Services/CommonService.cs
+http://orchardproject.net/
+https://dotnest.com/blog
+https://www.cnblogs.com/zhoujg/archive/2011/02/10/1950766.html
+http://www.cnblogs.com/zhoujg/tag/Orchard/
+https://www.cnblogs.com/souther/p/4531273.html
+
+
+通过"uninstall-package -f WebGrease"先卸载，然后通过"install-package WebGrease"再下载最新版本，问题解决。
+http://www.ityouzi.com/archives/mvc-webgrease-error.html
+
+
+accepts
