@@ -1,0 +1,98 @@
+视频播放插件Video.js
+
+http://www.jq22.com/jquery-info404
+
+HTML5 video标签嵌入视频各个浏览器下通用   IE8X
+http://www.zhangxinxu.com/study/201003/html5-video-mp4.html
+
+
+让所有浏览器支持HTML5 video视频标签
+http://www.zhangxinxu.com/wordpress/2010/03/every-browser-support-html5-video/
+
+Mediaelement Player  http://www.mediaelementjs.com/
+jPlayer  http://jplayer.org/
+
+
+poster image
+
+js - videojs视频播放，支持ie8  videojsplayer
+http://blog.csdn.net/u012246458/article/details/44495353
+
+video.js在IE8下无法正常播放
+http://blog.csdn.net/wanglufei_1992/article/details/51690636
+
+videojs兼容IE8
+https://www.cnblogs.com/chendongbky/p/5315591.html
+
+
+
+
+
+var myPlayer = videojs('my-video');
+			videojs("my-video").ready(function() {
+				var myPlayer = this;
+				myPlayer.play();
+			});
+
+
+            controls
+            preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}"
+
+            data-setup='{"techOrder": ["flash", "html5"]}'
+
+
+
+
+
+			<script type="text/javascript">
+
+    var player = videojs('example-video', {"poster": "","controls": "true"}, function(){this.on('play',function(){
+            console.log('正在播放');
+          }); 
+
+         //暂停--播放完毕后也会暂停
+          this.on('pause',function(){
+                       console.log("暂停中")
+                  }); 
+
+          // 结束
+          this.on('ended', function() {
+            console.log('结束');
+          })
+        
+    });
+
+    </script>
+
+
+	ar player = videojs('videoID',{
+　　　　controls: true,  //控制条
+　　　　preload: 'none', //是否自动加载
+　　　　width: '640',
+　　　　height: '264',
+　　　　poster: 'media/poster.jpg',
+　　　　sources: [
+　　　　　　{src: 'media/001.mp4',type: 'video/mp4'}
+　　　　]
+　　},function(){
+　　　　var that = this;
+　　　　that.on('pause',function(){
+　　　　　　old_time = this.currentTime();
+　　　　　　console.log('pause:' + old_time);
+　　　　})
+　　　　that.on('play',function(){
+　　　　　　new_time = this.currentTime();
+　　　　　　　console.log('playing:' + this.currentTime());
+　　　　})
+　　　　that.on('seeked',function(){
+　　　　　　new_time = this.currentTime();
+　　　　　　console.log('seeked:' + this.currentTime());
+　　　　　　if (old_time) {
+　　　　　　　　console.log(new_time > old_time ? '拖动快进' : '拖动后退');
+　　　　　　}
+　　　　})
+　　　　that.on('ended',function(){
+　　　　　　console.log('ended:'+ this.currentTime());
+　　　　　　console.log('duration:' + this.duration());
+　　　　})
+　　})

@@ -1,0 +1,6 @@
+
+
+"C:\Program Files (x86)\SWFTools\pdf2swf.exe" "D:\swftools_pdf\123.pdf" -o "D:\swftools_swf\123.pdf1.swf" -f -T 9 -t -s storeallcharacters -s linknameurl -p 1
+
+ "D:\swftools_pdf\123.pdf" -o "D:\swftools_swf\123.pdf%.swf" -f -T 9 -t -s storeallcharacters -s linknameurl
+ "D:\swftools_pdf\123.pdf" -o "D:\swftools_swf\123.pdf1.swf" -f -T 9 -t -s storeallcharacters -s linknameurl -p 1
